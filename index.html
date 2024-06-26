@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Rejseplanen</title>
+</head>
+<body>
+    <div class="content-container">
+        <div class="content-container-navbar">
+            <p>Navbar</p>
+        </div>
+        <div class="content-main">
+            <div class="content-container-input">
+                <form action="" id="trip-form" class="content-container-input-form">
+                    <label for="location">Fra</label><br>
+                    <input type="text" id="location" name="location" placeholder="Nuværende lokation"><br>
+                    <div id="location-suggestions" class="suggestions"></div>
+                    
+                    <label for="destination">Til</label><br>
+                    <input type="text" id="destination" name="destination" placeholder="Destination"><br>
+                    <div id="destination-suggestions" class="suggestions"></div>
+
+                    <input type="submit" value="Find rejse">
+                </form>
+            </div>
+            <div class="content-container-output" id="trip-output">
+                <!-- Trip details will be displayed here -->
+                 <p class="content-container-output-"></p>
+            </div>
+        </div>
+        <div class="content-container-footer">
+            Footer
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
