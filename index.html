@@ -8,31 +8,44 @@
     <title>Rejseplanen</title>
 </head>
 <body>
+
     <div class="content-container">
         <div class="content-container-navbar">
-            <p>Navbar</p>
+            <div class="navbar-train-animation">
+                <div class="navbar-content">
+                    
+                    <div class="bridge"></div>
+                    <div class="train">
+                        <div class="cart-one"></div>
+                        <div class="cart-two"></div>
+                        <div class="cart-three"></div>
+                    </div>
+                    <div class="sun"></div>
+                </div>
+            </div>
         </div>
+
         <div class="content-main">
             <div class="content-container-input">
                 <form action="" id="trip-form" class="content-container-input-form">
-                    <label for="location">Fra</label><br>
+                    <label for="location"></label><br>
                     <input type="text" id="location" name="location" placeholder="Nuværende lokation"><br>
                     <div id="location-suggestions" class="suggestions"></div>
                     
-                    <label for="destination">Til</label><br>
+                    <label for="destination"></label><br>
                     <input type="text" id="destination" name="destination" placeholder="Destination"><br>
                     <div id="destination-suggestions" class="suggestions"></div>
 
-                    <input type="submit" value="Find rejse">
+                    <input type="submit" value="Find rejse" id="trip-btn">
                 </form>
             </div>
             <div class="content-container-output" id="trip-output">
                 <!-- Trip details will be displayed here -->
-                 <p class="content-container-output-"></p>
+                <p class="content-container-output-"></p>
             </div>
         </div>
         <div class="content-container-footer">
-            Footer
+            <p>Licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>
         </div>
     </div>
     <script src="scripts.js"></script>

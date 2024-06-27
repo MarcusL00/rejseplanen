@@ -114,7 +114,7 @@ function displayTripData(data) {
               }</p>
             </div>
             <div class='type-container'>
-              <div class="type ${transport.type.toLowerCase()}"></div>
+              <div class="type-transport"></div>
               <h4>${transport.type}</h4>
             </div>
             <div class="bottom">
